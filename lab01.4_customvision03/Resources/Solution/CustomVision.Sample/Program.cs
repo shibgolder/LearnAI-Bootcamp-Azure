@@ -121,6 +121,8 @@ namespace CustomVision.Sample
 
         private static void LoadImagesFromDisk()
         {
+            
+            //NOTE :- need to change Hemlock,Japanese Cherry,test_images to image folder name , here is wrog name given need to fi
             // this loads the images to be uploaded from disk into memory
             hemlockImages = Directory.GetFiles(@"..\..\..\..\Images\Hemlock").Select(f => new MemoryStream(File.ReadAllBytes(f))).ToList();
             japaneseCherryImages = Directory.GetFiles(@"..\..\..\..\Images\Japanese Cherry").Select(f => new MemoryStream(File.ReadAllBytes(f))).ToList();
